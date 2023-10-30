@@ -10,6 +10,7 @@ header {
   position: fixed;
   width:100%;
   top:0px;
+  height:25px;
 }
 .menu {
   display: flex;
@@ -20,18 +21,13 @@ header {
 .menuItem{
   text-decoration: none;
   align-self: flex-start;
-  color:black
+  color:black;
 }
 
 img{
   height: 300px;
   width: 300px;
   border: 2px solid black;
-}
-
-#aboutImg {
-  background-image: url("../images/about.jpg");
-  background-size: cover;
 }
 
 #image-container {
