@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link href="styles/style.css" rel="stylesheet" />
 </head>
+
 <body>
+    <header>
+        <nav class="menu">
+          <h2 id = "logo">Roopasri Kshatriya</h2>
+          <a class="menuItem" href="index.html">Home</a>
+          <a class="menuItem" href="about.html">About</a>
+          <a class="menuItem" href="gallery.html">Gallery</a>
+        </nav>
+    </header>
     <main>
         <section class="contact-details">
-            <h2>Contact Details</h2>
-            <p>Email: <a href="mailto:roopasri.kshatriya@zemosolabs.com">roopasri.kshatriya@zemosolabs.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/roopasrikshatriya" target="_blank">LinkedIn Profile</a></p>
+            <h2>Contact Me</h2>
+            <form action="/index.html">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
 </body>
+
 </html>

@@ -1,33 +1,71 @@
-body{
+body {
   background-color: bisque;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
+
 header {
-  background-color: rgb(129, 111, 89);
   position: fixed;
-  width:100%;
-  top:0px;
-  height:25px;
+  width: 100%;
+  top: 0px;
+  height: 20px;
+  background-color: #333;
+  text-align: center;
+  padding: 15px;
 }
+
 .menu {
   display: flex;
   text-decoration: none;
-  margin-left: 50px;
-  justify-content: space-around;
-}
-.menuItem{
-  text-decoration: none;
-  align-self: flex-start;
-  color:black;
+  justify-content: flex-end;
 }
 
-img{
-  height: 300px;
-  width: 300px;
+.menuItem {
+  position: relative;
+  bottom: 10px;
+  right: 20px;
+  padding: 10px;
+  text-decoration: none;
+  align-self: flex-start;
+  color: beige;
+}
+
+#logo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  margin: 10px;
+  color: beige;
+}
+
+.main-section {
+  text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#home-container {
+  display: flex;
+  position: absolute;
+  top: 250px;
+}
+
+.home-item {
+  margin: 10px;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 200px;
+}
+
+
+#my-image {
+  height: 200px;
+  width: 200px;
   border: 2px solid black;
+  border-radius: 50%;
 }
 
 #image-container {
@@ -35,36 +73,88 @@ img{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: 10px;
+  row-gap: 20px;
   column-gap: 10px;
+  padding: 50px;
+  margin-top: 20px;
 }
 
 .image-item {
-  flex-grow: 5;
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
 }
 
 .about-content {
-  display: inline;
-  font-size: large;
-  padding: 1px;
-  margin: 10px;
-  
+  font-size: medium;
+  width: 80%;
+  text-align: justify;
+  padding: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
-#home-container {
-  display: flex;
-}
-
-.home-item {
-  margin: 10px;
-  font-size: 30px;
-}
 footer {
   position: fixed;
-  left:50%;
   bottom: 0px;
+  width: 100%;
+  background-color: #333;
 }
+
 footer p {
+  text-align: center;
+  height: 10px;
+  color: beige;
+}
+
+.contact-details {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  bottom: 20%;
+  right: 20%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  max-width: 500px;
+}
+
+.contact-details h2 {
+  font-size: 24px;
   text-align: center;
 }
 
+.contact-details label {
+  display: block;
+}
+
+.contact-details form {
+  margin-left: 50px;
+}
+
+.contact-details input,
+.contact-details textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-details button {
+  position: relative;
+  left: 30%;
+  top: 20%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact-details button:hover {
+  background-color: #555;
+}
